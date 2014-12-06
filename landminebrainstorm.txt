@@ -1,0 +1,29 @@
+Model
+-Methods
+ -clearBoard
+ -randomizeMines
+  -
+ -exposeCell
+  -when message recieved, read value of cell and send message based on whether    bomb or not 
+  -if not bomb, increases score variable
+  -if bomb, reduce number of lives 
+ -highScore
+  -compares current score to array of high scores
+  -if current score is greater than high score, replaces score and 
+  -bumps each next score down
+
+-Variables
+ -score
+ -lives
+ -2 arrays of high scores (name + score)
+
+View (game)
+-Methods
+ -needs to send messages when board is clicked
+ -buttonActionPerformed messages
+  -sends message when spaces are clicked
+
+View (leaderboard)
+-needs to be called up when game over 
+
+Controller
